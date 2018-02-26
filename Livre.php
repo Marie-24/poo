@@ -40,17 +40,17 @@ class Livre{
 
 
 $livre = new livre();
-$totor = $livre->auteur ="Dahl";
+$nom_auteur = $livre->auteur ="Dahl";
 $intitule = $livre->titre = "Bizarre";
 $livre->extrait = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pulvinar in dolor a bibendum. Maecenas ut varius risus. Duis ullamcorper mollis magna, sed lobortis felis tempor quis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus vel venenatis quam. Vestibulum interdum scelerisque dui, at efficitur dolor elementum vehicula. Maecenas eu cursus metus, id mollis justo. Donec accumsan mauris in consequat dignissim. Curabitur ornare non metus in aliquam. Pellentesque tincidunt molestie justo porta eleifend. Duis laoreet egestas arcu. Curabitur et justo ullamcorper augue tincidunt dictum.";
 
 
-$annee_tamere = $livre->annee=1950;
+$periode = $livre->annee=1950;
 
 
 
 echo $livre->searchWord('mollis');
-echo $livre->auteurContemporain($annee_tamere,$totor);
+echo $livre->auteurContemporain($periode,$nom_auteur);
 echo $livre->getTitle($intitule);
 
 echo"<pre>";
